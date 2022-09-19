@@ -1,0 +1,19 @@
+%% -*- mode: erlang -*-
+{"1.11.3",
+  [
+    {"1.11.1", [ %% This app version is shared for git tag 1.11.1 and 1.11.2
+      {load_module, jose_crypto_compat, brutal_purge, soft_purge, []},
+      {load_module, jose_public_key, brutal_purge, soft_purge, []},
+      {load_module, jose_server, brutal_purge, soft_purge, []},
+      {load_module, jose_jwa, brutal_purge, soft_purge, []}
+    ]}
+  ],
+  [
+    {"1.11.1",[
+      {load_module, jose_crypto_compat, brutal_purge, soft_purge, []},
+      {load_module, jose_public_key, brutal_purge, soft_purge, []},
+      {load_module, jose_server, brutal_purge, soft_purge, []},
+      {load_module, jose_jwa, brutal_purge, soft_purge, []}
+    ]}
+  ]
+}.
